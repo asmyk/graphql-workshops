@@ -20,7 +20,6 @@
 
 * [Basic query schema definition](fetching-data/untitled.md)
 * [Connect resolver with data source](fetching-data/connect-resolver-with-data-source.md)
-* [Test it - run query in playground](fetching-data/test-it.md)
 * [Tasks](fetching-data/tasks.md)
 
 ## Client
