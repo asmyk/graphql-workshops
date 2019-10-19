@@ -1,4 +1,14 @@
+---
+description: Basics workshops about GraphQL with Apollo Client and Server.
+---
+
 # GraphQL - workshops
+
+
+
+![](.gitbook/assets/image.png)
+
+![](.gitbook/assets/image%20%281%29.png)
 
 ## Agenda
 
