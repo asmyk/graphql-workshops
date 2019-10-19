@@ -10,10 +10,16 @@
 6. Store data - Mutations
 7. Error handling
 
-In this workshops we will build an online store application who:
+In this workshops we will build an restaurant-review application which:
 
-* Display list with products - we are assuming that our boss told us to support a lot of products, so we have to think about pagination, search, cache and other optimizaiton-related stuff :\)
-* User login and authentication - users can manage their orders
+* Display restaurants list with user's feedback:
+  * handling veery long list on main page
+  *  display single restaurant on page with reviews
+  *  allow users to post reviews
+  * browse other's reviews
+* User login and authentication - users can post their reviews
+
+
 
 
 
