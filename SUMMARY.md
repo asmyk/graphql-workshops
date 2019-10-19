@@ -7,7 +7,7 @@
 * [What is GraphQL?](introduction-to-graphql/untitled.md)
 * [How it works](introduction-to-graphql/how-it-works.md)
 * [Schema](introduction-to-graphql/schema.md)
-* [Differences between REST API and GraphQL](introduction-to-graphql/difference-between-rest-api-and-graphql.md)
+* [Benefits](introduction-to-graphql/difference-between-rest-api-and-graphql.md)
 * [Today's project demo](introduction-to-graphql/todays-project-demo.md)
 
 ## Tools - Apollo Server & Client <a id="apollo-1"></a>
