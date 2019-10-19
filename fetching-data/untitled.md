@@ -1,2 +1,2 @@
-# Implement first Query on server side
+# Basic query schema definition
 

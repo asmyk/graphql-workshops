@@ -1,2 +1,2 @@
-# Untitled
+# Basic mutation schema definition
 

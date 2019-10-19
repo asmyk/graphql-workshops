@@ -1,2 +1,2 @@
-# Difference between REST API and GraphQL
+# Differences between REST API and GraphQL
 

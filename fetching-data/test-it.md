@@ -1,2 +1,2 @@
-# Test it
+# Test it - run query in playground
 
