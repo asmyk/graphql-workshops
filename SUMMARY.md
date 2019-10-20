@@ -48,7 +48,7 @@
 
 ## Mutations - UI optimistic update <a id="mutations-optimistic-update"></a>
 
-* [Task](mutations-optimistic-update/task.md)
+* [Tasks](mutations-optimistic-update/task.md)
 * [Add optimistic update in UI client](mutations-optimistic-update/add-optimistic-update-in-ui-client.md)
 * [Tasks](mutations-optimistic-update/tasks.md)
 

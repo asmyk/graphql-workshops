@@ -1,4 +1,4 @@
-# Task
+# Tasks
 
 ### Add separate page for every restaurant
 
