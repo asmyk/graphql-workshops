@@ -20,6 +20,7 @@
 
 * [Basic query schema definition](fetching-data/untitled.md)
 * [Connect resolver with data source](fetching-data/connect-resolver-with-data-source.md)
+* [Apollo server playground](fetching-data/apollo-server-playground.md)
 * [Tasks](fetching-data/tasks.md)
 
 ## Client
@@ -31,9 +32,6 @@
 ## Mutations
 
 * [What is mutation?](mutations/what-is-mutation.md)
-* [Basic mutation schema definition](mutations/untitled.md)
-* [Resolver](mutations/resolver.md)
-* [Connect resolver to 3th-party data source](mutations/connect-resolver-to-3th-party-data-source.md)
 * [Tasks](mutations/tasks.md)
 
 ## Mutations - client
@@ -48,14 +46,9 @@
 * [Resolver implementation](query-paginated-list/resolver-implementation.md)
 * [Tasks](query-paginated-list/tasks.md)
 
-## Query - nested fields
-
-* [Schema for querying nested fields](query-nested-fields/schema-for-querying-nested-fields.md)
-* [Advanced resolvers](query-nested-fields/advanced-resolvers.md)
-* [Tasks](query-nested-fields/tasks.md)
-
 ## Mutations - UI optimistic update <a id="mutations-optimistic-update"></a>
 
+* [Task](mutations-optimistic-update/task.md)
 * [Add optimistic update in UI client](mutations-optimistic-update/add-optimistic-update-in-ui-client.md)
 * [Tasks](mutations-optimistic-update/tasks.md)
 
@@ -68,4 +61,10 @@
 ## Error handling
 
 * [Untitled](error-handling/untitled.md)
+
+## Query - nested fields
+
+* [Schema for querying nested fields](query-nested-fields/schema-for-querying-nested-fields.md)
+* [Advanced resolvers](query-nested-fields/advanced-resolvers.md)
+* [Tasks](query-nested-fields/tasks.md)
 

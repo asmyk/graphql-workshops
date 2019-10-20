@@ -6,9 +6,9 @@ description: Basics workshops about GraphQL with Apollo Client and Server.
 
 
 
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%285%29.png)
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 ## Agenda
 
@@ -20,14 +20,9 @@ description: Basics workshops about GraphQL with Apollo Client and Server.
 6. Store data - Mutations
 7. Error handling
 
-In this workshops we will build an restaurant-review application which:
 
-* Display restaurants list with user's feedback:
-  * handling veery long list on main page
-  *  display single restaurant on page with reviews
-  *  allow users to post reviews
-  * browse other's reviews
-* User login and authentication - users can post their reviews
+
+**Have fun! :\)**
 
 
 

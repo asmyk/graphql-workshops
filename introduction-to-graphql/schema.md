@@ -36,5 +36,5 @@ Every query between client and server is sent by HTTP Post method. Compared to R
 
 
 
-![source: https://www.howtographql.com](../.gitbook/assets/image%20%287%29.png)
+![source: https://www.howtographql.com](../.gitbook/assets/image%20%286%29.png)
 

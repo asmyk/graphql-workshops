@@ -14,13 +14,13 @@ This architecture has a GraphQL Server with an integrated database**.** The clie
 
 In that context, GraphQL can be used to _unify_ these existing systems and hide their complexity behind a nice GraphQL API. This way, new client applications can be developed that simply talk to the GraphQL server to fetch the data they need.
 
-![source: www.howtographql.com](../.gitbook/assets/image%20%285%29.png)
+![source: www.howtographql.com](../.gitbook/assets/image%20%282%29.png)
 
 ### 3. Hybrid approach
 
 It's just a combination of two previous examples. When a query is received by the server, it will resolve it and either retrieve the required data from the connected database or some of the integrated APIs.
 
-![source: www.howtographql.com](../.gitbook/assets/image%20%286%29.png)
+![source: www.howtographql.com](../.gitbook/assets/image%20%283%29.png)
 
 
 
