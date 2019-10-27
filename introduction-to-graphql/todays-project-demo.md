@@ -8,6 +8,7 @@ In this workshops we will build an restaurant-review application which:
   * allow users to post reviews
   * browse other's reviews
 * User login and authentication - users can post their reviews
+* Error handling - we will care about errors :\)
 
 Example production ready app will look like this :\)
 

@@ -19,6 +19,7 @@
 ## Implement first Query on server side <a id="fetching-data"></a>
 
 * [Basic query schema definition](fetching-data/untitled.md)
+* [Tasks](fetching-data/tasks-1.md)
 * [Connect resolver with data source](fetching-data/connect-resolver-with-data-source.md)
 * [Apollo server playground](fetching-data/apollo-server-playground.md)
 * [Tasks](fetching-data/tasks.md)

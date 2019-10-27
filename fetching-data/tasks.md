@@ -1,11 +1,11 @@
 # Tasks
 
-Let's wrap up knowledge from previous chapters and make an basic Query definition and resolvers for our app.
+Let's wrap up knowledge from previous chapters and make a basic Query definition and resolvers for our app.
 
-1. Init Apollo Server project and run empty playground
-2. Create a object type for Restaurant, RestaurantList, Review and Reviews based on example API
-3. Create Query object type which returns:
-   1. list of restaurants
-   2. specific restaurant matched by ID
-4. Implement resolver and data-source for restaurant type object
+1. Create Query object type which returns:
+   1. specific restaurant matched by ID
+   2. list of all restaurants 
+2. Implement resolver of single restaurant type object
+3. Implement resolver  of all available restaurants
+4. Implement data source for restaurant and restaurants list
 
