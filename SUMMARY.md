@@ -53,15 +53,13 @@
 * [Add optimistic update in UI client](mutations-optimistic-update/add-optimistic-update-in-ui-client.md)
 * [Tasks](mutations-optimistic-update/tasks.md)
 
+## \[EXTRA\] Error handling <a id="error-handling"></a>
+
 ## \[EXTRA\] Instant refresh data <a id="refresh-data"></a>
 
 * [Subscriptions - how it works](refresh-data/subscriptions-how-it-works.md)
 * [Example subscription](refresh-data/example-subscription.md)
 * [Tasks](refresh-data/tasks.md)
-
-## \[EXTRA\] Error handling <a id="error-handling"></a>
-
-* [Untitled](error-handling/untitled.md)
 
 ## \[EXTRA\] Query - nested fields <a id="query-nested-fields"></a>
 
