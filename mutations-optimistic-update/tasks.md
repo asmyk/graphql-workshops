@@ -1,6 +1,6 @@
 # Tasks
 
-1. Implement optimistic update in reviews list
+1. Implement optimistic update after user post comment
 
 
 

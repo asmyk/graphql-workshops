@@ -86,3 +86,56 @@ export default function MovieDetailsPage() {
 }
 ```
 
+#### Fragments
+
+Fragments are the primary unit of composition in GraphQL.
+
+Fragments allow for the reuse of common repeated selections of fields, reducing duplicated text in the document. Inline Fragments can be used directly within a selection to condition upon a type condition when querying against an interface or union.
+
+Let's refactor above example with Fragments functionality:
+
+```jsx
+ import React, { Fragment } from 'react';
+import { useQuery } from '@apollo/react-hooks';
+import gql from 'graphql-tag';
+
+import { Loading, Header, LaunchDetail } from '../components';
+import { ActionButton } from '../containers';
+
+export const MOVIES_FRAGMENT = gql`
+  fragment movieFields on Movie {
+    id
+    name
+    description
+  }
+`
+export const GET_MOVIE_DETAILS = gql`
+  query MovieDetails($id: ID!) {
+    movie(id: $id) {
+      ...movieFields
+    }
+  }
+${MOVIES_FRAGMENT}
+`;
+export default function MovieDetailsPage() {
+  const movieId = 434511;
+  const { data, loading, error } = useQuery(
+    GET_MOVIE_DETAILS,
+    { variables: { id: movieId } }
+  );
+  if (loading) return <Loading />;
+  if (error) return <p>ERROR: {error.message}</p>;
+
+  return (
+    <Fragment>
+      <Header>
+       {data.movie.name} - 
+       {data.movie.description}
+      </Header>
+    </Fragment>
+  );
+}
+```
+
+Now newly created fragment can be reused here, and also in other components who fetch this kind of data.
+

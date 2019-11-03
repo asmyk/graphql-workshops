@@ -12,8 +12,6 @@
 
 ## Tools - Apollo Server & Client <a id="apollo-1"></a>
 
-* [Apollo Server](apollo-1/untitled.md)
-* [Apollo Client](apollo-1/apollo-client.md)
 * [Tasks](apollo-1/setup-tools.md)
 
 ## Implement first Query on server side <a id="fetching-data"></a>
@@ -53,17 +51,8 @@
 * [Add optimistic update in UI client](mutations-optimistic-update/add-optimistic-update-in-ui-client.md)
 * [Tasks](mutations-optimistic-update/tasks.md)
 
-## \[EXTRA\] Error handling <a id="error-handling"></a>
+## Error handling
 
-## \[EXTRA\] Instant refresh data <a id="refresh-data"></a>
-
-* [Subscriptions - how it works](refresh-data/subscriptions-how-it-works.md)
-* [Example subscription](refresh-data/example-subscription.md)
-* [Tasks](refresh-data/tasks.md)
-
-## \[EXTRA\] Query - nested fields <a id="query-nested-fields"></a>
-
-* [Schema for querying nested fields](query-nested-fields/schema-for-querying-nested-fields.md)
-* [Advanced resolvers](query-nested-fields/advanced-resolvers.md)
-* [Tasks](query-nested-fields/tasks.md)
+* [Handling user facing errors](error-handling/handling-user-facing-errors.md)
+* [Tasks](error-handling/tasks.md)
 

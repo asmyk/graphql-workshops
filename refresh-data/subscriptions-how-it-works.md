@@ -1,2 +1,0 @@
-# Subscriptions - how it works
-
