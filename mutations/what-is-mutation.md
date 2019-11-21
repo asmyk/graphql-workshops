@@ -23,8 +23,7 @@ This mutation example expect to get `email` and `password` fields, and in respon
 
 Resolver for mutation looks very similar to query resolvers:
 
-{% code-tabs %}
-{% code-tabs-item title="src/resolvers.js" %}
+{% code title="src/resolvers.js" %}
 ```javascript
 Mutation: {
 	login: async (_, { email, password }, { dataSources }) => {
@@ -33,8 +32,7 @@ Mutation: {
 	}
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 We defined login field resolver, which is a `async` function that returning mapped response from external service. Example of data source may look like this:
 

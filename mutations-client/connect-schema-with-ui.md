@@ -5,6 +5,8 @@ For mutations Apollo Client gives us a `useMutation`hook.
 Let's look at example below:
 
 ```jsx
+import { useMutation } from '@apollo/react-hooks';
+
 export default function Login() {
   const [login, { data }] = useMutation(LOGIN_USER);
   return <LoginForm login={login} />;
@@ -20,7 +22,7 @@ One more step to run this request from client is to add mutation definition and 
 
 ```jsx
 import React from 'react';
-import { useApolloClient, useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
 
 const LOGIN_USER = gql`
@@ -34,5 +36,10 @@ const LOGIN_USER = gql`
     }
   }
 `;
+
+export default function Login() {
+  const [login, { data }] = useMutation(LOGIN_USER);
+  return <LoginForm login={login} />;
+}
 ```
 

@@ -2,8 +2,7 @@
 
 To display data on frontend we need to tell GraphQL what query will be executed and what data we want. An example below shows a simple query that fetching list with info about TV series:
 
-{% code-tabs %}
-{% code-tabs-item title="src/components/SeriesList.js" %}
+{% code title="src/components/SeriesList.js" %}
 ```jsx
 import React, { Fragment } from 'react';
 import { useQuery } from '@apollo/react-hooks';
@@ -40,8 +39,7 @@ export default function SeriesList() {
 }
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 GraphQL Query is wrapped by function from `graphql-tag`.  Then, we execute `useQuery` hook with query as an argument. It's a React Hook that fetches a GraphQL query and exposes the result so you can render your UI based on the data it returns.
 

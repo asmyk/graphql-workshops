@@ -2,8 +2,7 @@
 
 GraphQL schema is at the core of any GraphQL server implementation. Query schema is similar to JSON file, but it's a query language. When client wants to ask server for some data, basic schema may look like this:
 
-{% code-tabs %}
-{% code-tabs-item title="Client send this query to GraphQL server" %}
+{% code title="Client send this query to GraphQL server" %}
 ```graphql
 {
   users {
@@ -11,8 +10,7 @@ GraphQL schema is at the core of any GraphQL server implementation. Query schema
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 And in the response client will receive something like this:
 

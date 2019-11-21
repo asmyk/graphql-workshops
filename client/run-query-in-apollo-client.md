@@ -2,8 +2,7 @@
 
 To connect Apollo Client into react App, we have to init ApolloClient object with some configuration data, and connect that client with UI. This allows us to easily bind GraphQL operations to our UI.
 
-{% code-tabs %}
-{% code-tabs-item title="index.js" %}
+{% code title="index.js" %}
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -39,8 +38,7 @@ ReactDOM.render(
 );
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 And that's it. Now, lets look how simple query can be executed.
 

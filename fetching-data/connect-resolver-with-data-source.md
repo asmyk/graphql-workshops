@@ -21,8 +21,7 @@ fieldName: (parent, args, context, info) => data;
 
 First, let's create a file which contains Object that maps to Query fields:
 
-{% code-tabs %}
-{% code-tabs-item title="src/resolvers.js" %}
+{% code title="src/resolvers.js" %}
 ```javascript
 module.exports = {
   Query: {
@@ -34,15 +33,13 @@ module.exports = {
   }
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Those three functions corresponds to Query fields. They will be invoked when client asks for some of those fields.
 
 Resolvers should be added to Apollo Server resolvers map. 
 
-{% code-tabs %}
-{% code-tabs-item title="src/index.js" %}
+{% code title="src/index.js" %}
 ```text
 ...
 const resolvers = require('./resolvers');
@@ -54,8 +51,7 @@ const server = new ApolloServer({
   resolvers
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Now, they are visible for Apollo server, and each function will be executed when some client ask for data.
 
@@ -71,8 +67,7 @@ npm install apollo-datasource-rest --save
 
 Then let's create a file which represents single data source:
 
-{% code-tabs %}
-{% code-tabs-item title="src/datasources/series.api.js" %}
+{% code title="src/datasources/series.api.js" %}
 ```javascript
 const { RESTDataSource } = require('apollo-datasource-rest');
 
@@ -97,15 +92,13 @@ class SeriesAPI extends RESTDataSource {
 
 module.exports = SeriesAPI;
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 There are couple important things to notice about this example. A `RESTDataSource` class provides data fetching logic, as well as caching and deduplication.  Also, this class sets up an in-memory cache that caches responses from our REST resources. It's called **partial query caching**. What's great about this cache is that you can reuse existing caching logic that your REST API exposes. 
 
 Now, let's make data-sources visible for resolvers by adding them into Apollo server:
 
-{% code-tabs %}
-{% code-tabs-item title="src/index.js" %}
+{% code title="src/index.js" %}
 ```text
 ...
 const resolvers = require('./resolvers');
@@ -123,6 +116,5 @@ const server = new ApolloServer({
   })
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
