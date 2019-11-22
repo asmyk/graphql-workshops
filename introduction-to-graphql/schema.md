@@ -1,6 +1,6 @@
 # Schema
 
-GraphQL schema is at the core of any GraphQL server implementation. Query schema is similar to JSON file, but it's a query language. When client wants to ask server for some data, basic schema may look like this:
+GraphQL schema is at the core of any GraphQL server implementation. Query schema is similar to JSON file, but it's a query language. When a client wants to ask server for some data, a basic schema may look like this:
 
 {% code title="Client send this query to GraphQL server" %}
 ```graphql
@@ -26,7 +26,7 @@ And in the response client will receive something like this:
 }
 ```
 
-This is how basic schema look like. We will go into details in next sections.
+This is how a basic schema looks like. We will go into detail in the next sections.
 
 ## Architecture
 
