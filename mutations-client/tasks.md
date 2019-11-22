@@ -1,6 +1,6 @@
 # Tasks
 
-In this tasks just focus on functionality. Most important part of this tasks is to get familiar how mutation works. Do styling/redirect/fancy stuff at the end.
+In this tasks just focus on functionality. Most important part of these tasks is to get familiar how mutation works. Do styling/redirect/fancy stuff at the end if time allows.
 
 1. **Add user register page:**
    1. **Implement simple form**
