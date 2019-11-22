@@ -1,6 +1,6 @@
 # Display items list on front end
 
-To display data on frontend we need to tell GraphQL what query will be executed and what data we want. An example below shows a simple query that fetching list with info about TV series:
+To display data on frontend we need to tell GraphQL what query will be executed and what data we want. An example below shows a simple query that fetches a list with info about TV series:
 
 {% code title="src/components/SeriesList.js" %}
 ```jsx
@@ -135,5 +135,5 @@ export default function MovieDetailsPage() {
 }
 ```
 
-Now newly created fragment can be reused here, and also in other components who fetch this kind of data.
+Now, newly created fragment can be reused here, and also in other components which fetch this kind of data.
 

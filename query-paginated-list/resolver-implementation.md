@@ -1,6 +1,6 @@
 # Resolver implementation
 
-To return paginated list we have to refactor resolver also, because data returned by resolver have to be compatible with schema.
+To return paginated list we have to also refactor resolver, because data returned by resolver have to be compatible with schema.
 
 ```javascript
 module.exports = {
@@ -32,7 +32,7 @@ module.exports = {
 
 This function fetches all available data first. It's not only one true approach, because it's possible to pass GraphQL query arguments into external service request to provide pagination. But, for this tutorial we want to keep things simple.
 
-Next, function `paginateResult` will slice chunk of data based on `pageSize` and cursor determined by `after` . Below is example how this function may look like:
+Next, function `paginateResult` will slice chunk of data based on `pageSize` and cursor determined by `after` . Below is an example on how this function may look like:
 
 ```graphql
 module.exports.paginateResults = ({

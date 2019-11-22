@@ -1,10 +1,10 @@
 # Today's project demo
 
-In this workshops we will build an restaurant-review application which:
+In this workshop we will build a restaurant-review application which:
 
-* Display restaurants list with user's feedback:
-  * handling veery long list on main page
-  * display single restaurant on page with reviews
+* Displays a list of restaurants with users' feedback:
+  * handling veery long list on the main page
+  * display a single restaurant on the page with reviews
   * allow users to post reviews
   * browse other's reviews
 * User login and authentication - users can post their reviews

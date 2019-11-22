@@ -2,7 +2,7 @@
 
 Optimistic UI is a pattern that you can use to simulate the results of a mutation and update the UI even before receiving a response from the server. Once the response is received from the server, the optimistic result is thrown away and replaced with the actual result.
 
-Let's look at this simple scenario where we can apply optimistic update. We have list with comments, and form for post a new comment. When user post a new comment, then we need to update list before server respond with data. Keep in mind that optimistic result doesn't have to be full data object - data will be corrected after server response
+Let's look at this simple scenario where we can apply the optimistic update. We have a list with comments, and a form for post a new comment. When a user posts a new comment, then we need to update a list before server responds with data. Keep in mind that optimistic result doesn't have to be full data object - data will be corrected after server response
 
 ```javascript
 const SUBMIT_COMMENT_MUTATION = gql`

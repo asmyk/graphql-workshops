@@ -1,6 +1,6 @@
 # Tasks
 
-In both tasks we are assuming that all data schema is compatible with API
+In all tasks we are assuming that all data schemas are compatible with the API
 
 1. **Add User type into schema.**
 2. **Implement basic mutation for user register \(username, email, password\)**

@@ -1,6 +1,6 @@
 # Tasks
 
-Start from basics. Let's focus on core schema parts in our app:
+Let's start from basics. Let's focus on the core schema parts in our app:
 
 1. **Init Apollo Server project and run empty playground**
 2. **Create a object type schema for:**
