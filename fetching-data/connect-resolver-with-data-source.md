@@ -2,11 +2,11 @@
 
 Now it's time to connect Query definition with resolvers and data-sources.
 
-#### **What is resolver?**
+#### **What is a resolver?**
 
-**Resolver** is a function which turning a GraphQL operation \(a query, mutation, or subscription\) into data. They either return the same type of data we specify in our schema or a promise for that data.
+**Resolver** is a function which turns a GraphQL operation \(a query, mutation, or subscription\) into data. They either return the same type of data we specify in our schema or a promise for that data.
 
-Definition of resolver function looks like this
+The definition of a resolver function looks like this
 
 ```javascript
 fieldName: (parent, args, context, info) => data;
@@ -19,7 +19,7 @@ fieldName: (parent, args, context, info) => data;
 
 #### How to apply resolver?
 
-First, let's create a file which contains Object that maps to Query fields:
+First, let's create a file which contains an Object that maps to Query fields:
 
 {% code title="src/resolvers.js" %}
 ```javascript
@@ -53,19 +53,19 @@ const server = new ApolloServer({
 ```
 {% endcode %}
 
-Now, they are visible for Apollo server, and each function will be executed when some client ask for data.
+Now, they are visible for Apollo server, and each function will be executed when some client askes for data.
 
 #### Data sources
 
 They are helpful when we want to connect others services into GraphQL layer. In following section we will apply some REST services into GraphQL layer, and make them visible to resolvers.
 
-To get started install following package:
+To get started install the following package:
 
 ```text
 npm install apollo-datasource-rest --save
 ```
 
-Then let's create a file which represents single data source:
+Then let's create a file which represents a single data source:
 
 {% code title="src/datasources/series.api.js" %}
 ```javascript
