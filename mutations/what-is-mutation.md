@@ -1,4 +1,4 @@
-# What is mutation?
+# What is a mutation?
 
 Where queries fetch data, mutations are responsible for making changes to data. Mutations rely on a similar syntax to queries.
 
@@ -17,7 +17,7 @@ type UserLoginResponse {
  }
 ```
 
-This mutation example expect to get `email` and `password` fields, and in response returns object contains some token and User object.
+This mutation example expect to get `email` and `password` fields, and in response returns an object that contains some token and User object.
 
 ### Resolver
 
