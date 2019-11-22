@@ -1,6 +1,6 @@
 # Schema example for paginated items
 
-There are couple options how to approach into GraphQL pagination. Look at these three proposals how to approach:
+There are a couple of options how to approach into GraphQL pagination. Look at these three proposals how to approach:
 
 * We could do something like `friends(first:2 offset:2)` to ask for the next two in the list.
 * We could do something like `friends(first:2 after:$friendId)`, to ask for the next two after the last friend we fetched.
