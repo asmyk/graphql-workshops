@@ -17,7 +17,7 @@ query GetSeriesById {
 }
 ```
 
-GraphQL queries declaratively describe what data the issuer wishes to fetch from whoever is fulfilling the GraphQL query. 
+GraphQL queries declaratively describe what data the issuer wishes to fetch from whoever is fulfilling the GraphQL query.
 
 This query fetches probably a lot of data about episodes. What if we need only series name and description?
 
@@ -31,7 +31,7 @@ query GetSeriesById {
 }
 ```
 
-Ok - that's it. GraphQL server will return only what client wants. 
+Ok - that's it. GraphQL server will return only what client wants.
 
 In both examples parameter ID is hardcoded. Queries can be easily parameterized:
 

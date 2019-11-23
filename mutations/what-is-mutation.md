@@ -1,8 +1,8 @@
-# What is a mutation?
+# What is mutation?
 
 Where queries fetch data, mutations are responsible for making changes to data. Mutations rely on a similar syntax to queries.
 
-### Schema
+## Schema
 
 Just like in queries, if the mutation field returns an object type, you can ask for nested fields. This can be useful for fetching the new state of an object after an update. Let's look at a simple example mutation defined in server:
 
@@ -19,17 +19,17 @@ type UserLoginResponse {
 
 This mutation example expect to get `email` and `password` fields, and in response returns an object that contains some token and User object.
 
-### Resolver
+## Resolver
 
 Resolver for mutation looks very similar to query resolvers:
 
 {% code title="src/resolvers.js" %}
 ```javascript
 Mutation: {
-	login: async (_, { email, password }, { dataSources }) => {
-		const user = await dataSources.userAPI.login({ email, password });
-		return user;
-	}
+    login: async (_, { email, password }, { dataSources }) => {
+        const user = await dataSources.userAPI.login({ email, password });
+        return user;
+    }
 }
 ```
 {% endcode %}
@@ -38,16 +38,14 @@ We defined login field resolver, which is a `async` function that returning mapp
 
 ```javascript
 class UserAPI extends RESTDataSource {
-	constructor( ) {
-		super();
-		this.baseURL = 'http://myusersservice.com/';
-	}
-	
-	async login({ email, password } = {}) {
-		return	this.post('auth/local', {identifier: email, password });
-	}
+    constructor( ) {
+        super();
+        this.baseURL = 'http://myusersservice.com/';
+    }
+
+    async login({ email, password } = {}) {
+        return    this.post('auth/local', {identifier: email, password });
+    }
 }
 ```
-
-
 

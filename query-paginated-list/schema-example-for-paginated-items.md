@@ -6,7 +6,7 @@ There are a couple of options how to approach into GraphQL pagination. Look at t
 * We could do something like `friends(first:2 after:$friendId)`, to ask for the next two after the last friend we fetched.
 * We could do something like `friends(first:2 after:$friendCursor)`, where we get a cursor from the last item and use that to paginate.
 
-### Relay Cursor Connections
+## Relay Cursor Connections
 
 But, in this tutorial we will focus on Relay Cursor Connections spec. Look at example below
 
@@ -38,7 +38,7 @@ In this case, `friends` is a connection. That query demonstrates the four featur
 * For each edge in the connection, we asked for a cursor. This cursor is an opaque string, and is precisely what we would pass to the `after` arg to paginate starting after this edge.
 * We asked for `hasNextPage`; that will tell us if there are more edges available, or if we’ve reached the end of this connection.
 
-### GraphQL Server Implementation
+## GraphQL Server Implementation
 
 You may wondering how many changes require this kind of pagination. Let's start from refactor schema to something like this:
 

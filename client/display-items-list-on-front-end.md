@@ -11,13 +11,13 @@ import gql from 'graphql-tag';
 import { Header, Button, Loading } from '../components';
 
 const GET_SERIES = gql`
-	query seriesList() {
+    query seriesList() {
       series {
           name
           description
           id
       }
-	}
+    }
 `;
 export default function SeriesList() {
   const { data, loading, error } = useQuery(GET_SERIES);
@@ -37,11 +37,10 @@ export default function SeriesList() {
     </Fragment>
   );
 }
-
 ```
 {% endcode %}
 
-GraphQL Query is wrapped by function from `graphql-tag`.  Then, we execute `useQuery` hook with query as an argument. It's a React Hook that fetches a GraphQL query and exposes the result so you can render your UI based on the data it returns.
+GraphQL Query is wrapped by function from `graphql-tag`. Then, we execute `useQuery` hook with query as an argument. It's a React Hook that fetches a GraphQL query and exposes the result so you can render your UI based on the data it returns.
 
 **Parameterized Query**
 
@@ -84,7 +83,7 @@ export default function MovieDetailsPage() {
 }
 ```
 
-#### Fragments
+## Fragments
 
 Fragments are the primary unit of composition in GraphQL.
 

@@ -1,6 +1,6 @@
 # Connect schema with UI
 
-For mutations Apollo Client gives us a `useMutation`hook. 
+For mutations Apollo Client gives us a `useMutation`hook.
 
 Let's look at the example below:
 

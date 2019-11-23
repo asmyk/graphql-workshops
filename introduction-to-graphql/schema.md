@@ -30,9 +30,7 @@ This is how a basic schema looks like. We will go into detail in the next sectio
 
 ## Architecture
 
-Every query between client and server is sent by HTTP Post method. Compared to REST API, GraphQL doesn't use  different HTTP methods for data fetch/update/create. All communication is handled by Query passed in Post body.
-
-
+Every query between client and server is sent by HTTP Post method. Compared to REST API, GraphQL doesn't use different HTTP methods for data fetch/update/create. All communication is handled by Query passed in Post body.
 
 ![source: https://www.howtographql.com](../.gitbook/assets/image%20%286%29.png)
 

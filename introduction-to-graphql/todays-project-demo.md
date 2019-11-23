@@ -15,5 +15,3 @@ Example production ready app will look like this :\)
 
 ![This is our goal :\)](../.gitbook/assets/screenshot-2019-10-19-at-21.16.45.png)
 
-
-

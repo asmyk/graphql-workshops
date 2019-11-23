@@ -12,5 +12,3 @@ In this tasks just focus on functionality. Most important part of these tasks is
    3. **Handle response and save auth key in local cache**
 3. **⭐️Add logged user info in the navigation bar or other place which is visible in all pages.**
 
-
-

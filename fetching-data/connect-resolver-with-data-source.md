@@ -2,7 +2,7 @@
 
 Now it's time to connect Query definition with resolvers and data-sources.
 
-#### **What is a resolver?**
+## **What is a resolver?**
 
 **Resolver** is a function which turns a GraphQL operation \(a query, mutation, or subscription\) into data. They either return the same type of data we specify in our schema or a promise for that data.
 
@@ -17,7 +17,7 @@ fieldName: (parent, args, context, info) => data;
 * **context**: An object shared by all resolvers in a GraphQL operation. We use the context to contain per-request state such as authentication information and access our data sources.
 * **info**: Information about the execution state of the operation which should only be used in advanced cases
 
-#### How to apply resolver?
+## How to apply resolver?
 
 First, let's create a file which contains an Object that maps to Query fields:
 
@@ -29,7 +29,7 @@ module.exports = {
       dataSources.series.getEpisodesForGivenSeries({id, season}),
     series: (_, { id }, { dataSources }) =>
       dataSources.series.getSeriesById({ id }),
-    movie: (_, __, { id }) => dataSources.movies.getMovieById({ id })
+    movie: (_, { id }) => dataSources.movies.getMovieById({ id })
   }
 };
 ```
@@ -37,7 +37,7 @@ module.exports = {
 
 Those three functions corresponds to Query fields. They will be invoked when client asks for some of those fields.
 
-Resolvers should be added to Apollo Server resolvers map. 
+Resolvers should be added to Apollo Server resolvers map.
 
 {% code title="src/index.js" %}
 ```text
@@ -55,7 +55,7 @@ const server = new ApolloServer({
 
 Now, they are visible for Apollo server, and each function will be executed when some client askes for data.
 
-#### Data sources
+## Data sources
 
 They are helpful when we want to connect others services into GraphQL layer. In following section we will apply some REST services into GraphQL layer, and make them visible to resolvers.
 
@@ -94,7 +94,7 @@ module.exports = SeriesAPI;
 ```
 {% endcode %}
 
-There are couple important things to notice about this example. A `RESTDataSource` class provides data fetching logic, as well as caching and deduplication.  Also, this class sets up an in-memory cache that caches responses from our REST resources. It's called **partial query caching**. What's great about this cache is that you can reuse existing caching logic that your REST API exposes. 
+There are couple important things to notice about this example. A `RESTDataSource` class provides data fetching logic, as well as caching and deduplication. Also, this class sets up an in-memory cache that caches responses from our REST resources. It's called **partial query caching**. What's great about this cache is that you can reuse existing caching logic that your REST API exposes.
 
 Now, let's make data-sources visible for resolvers by adding them into Apollo server:
 
